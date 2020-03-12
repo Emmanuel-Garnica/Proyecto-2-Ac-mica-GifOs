@@ -1,0 +1,29 @@
+.container_myGifOs {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px; }
+  .container_myGifOs .title_myGifOs {
+    display: flex;
+    align-items: center;
+    background-color: #FFFAFE;
+    width: 1200px;
+    height: 32px;
+    margin-bottom: 16px;
+    padding-left: 7px;
+    line-height: 18px;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    border: 1px solid #E6BBE2;
+    box-sizing: border-box; }
+  .container_myGifOs .content_myGifOs_boxes {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    width: 1200px; }
+    .container_myGifOs .content_myGifOs_boxes .myGifOs_box {
+      display: flex;
+      position: relative;
+      margin-bottom: 16px; }
+      .container_myGifOs .content_myGifOs_boxes .myGifOs_box img {
+        height: 298px;
+        width: 288px;
+        background-color: #E6E6E6; }

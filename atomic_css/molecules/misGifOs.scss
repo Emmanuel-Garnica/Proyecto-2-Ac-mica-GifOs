@@ -1,0 +1,35 @@
+@import '../utilities/variables.scss';
+.container_myGifOs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    .title_myGifOs {
+        display: flex;
+        align-items: center;
+        background-color: #FFFAFE;
+        width: 1200px;
+        height: 32px;
+        margin-bottom: 16px;
+        padding-left: 7px;
+        line-height: 18px;
+        box-shadow: $secondary-shadow;
+        border: 1px solid #E6BBE2;
+        box-sizing: border-box;
+    }
+    .content_myGifOs_boxes {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+        width: 1200px;
+        .myGifOs_box {
+            display: flex;
+            position: relative;
+            margin-bottom: 16px;
+            img {
+                height: 298px;
+                width: 288px;
+                background-color: $gray-window;
+            }
+        }
+    }
+}

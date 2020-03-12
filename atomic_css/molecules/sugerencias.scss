@@ -1,0 +1,92 @@
+@import '../utilities/variables.scss';
+.container_suggestions {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 64px 99px;
+    width: 1200px;
+    .title_suggestions {
+        display: flex;
+        align-items: center;
+        background-color: #FFFAFE;
+        width: 1200px;
+        height: 32px;
+        margin-bottom: 16px;
+        padding-left: 7px;
+        line-height: 18px;
+        box-shadow: $secondary-shadow;
+        border: 1px solid #E6BBE2;
+        box-sizing: border-box;
+    }
+    .content_suggestion_boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .suggestion_box {
+            position: relative;
+            height: 313px;
+            width: 288px;
+            box-shadow: $primary-shadow;
+            span:first-of-type {
+                position: absolute;
+                width: 280px;
+                height: 24px;
+                margin: 3px 4px 0 4px;
+                padding: 3px 0 3px 3px;
+                box-sizing: border-box;
+                background-image: $gradient;
+                color: $white-text;
+                font-family: $secondary-font;
+                line-height: 18px;
+            }
+            span.night {
+                background-image: $dark-gradient;
+            }
+            img {
+                position: absolute;
+                right: 8px;
+                top: 8px;
+            }
+            .suggestion_box_gif {
+                position: absolute;
+                bottom: 4px;
+                left: 4px;
+                background-color: $gray-window;
+                background-size: cover;
+                background-position: center;
+                width: 280px;
+                height: 280px;
+                &:hover {
+                    outline: 1px dotted $shadow-color;
+                }
+            }
+             :last-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: 19px;
+                left: 11px;
+                width: 81px;
+                height: 34px;
+                background-color: #4180F6;
+                box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+                border: 1px solid #4C2F99;
+                box-sizing: border-box;
+                color: $white-text;
+                line-height: 18px;
+                &:hover {
+                    cursor: pointer;
+                    outline: 1px dotted $shadow-color;
+                    outline-offset: -4px;
+                }
+            }
+        }
+    }
+    .content_suggestion_boxes.night {
+        background-color: #110038
+    }
+}
+
+.container_suggestions.night {
+    background-color: #110038;
+}

@@ -1,0 +1,21 @@
+$primary-font: 'Chakra Petch Regular',
+sans-serif;
+$secondary-font:'Chakra Petch Bold',
+sans-serif;
+$primary-color-one: #F7C9F3;
+$primary-color-two: #4180F6;
+$primary-darkcolor-one: #EE3EFE;
+$primary-darkcolor-two: #2E32FB;
+$gray-window: #E6E6E6;
+$gray-button: #F0F0F0;
+$shadow-color: #110038;
+$white-text: white;
+$gray-text: #B4B4B4;
+$gradient: linear-gradient(270deg, $primary-color-one 0%, $primary-color-two 100%);
+$dark-gradient: linear-gradient(270deg, $primary-darkcolor-one 0%, $primary-darkcolor-two 100%);
+$primary-shadow: inset -2px -2px 0 0 #B4B4B4,
+inset 2px 2px 0 0 #FFFFFF;
+$secondary-shadow: inset -2px -2px 0 0 #E6DCE4,
+inset 2px 2px 0 0 #80687D;
+$terciary-shadow: inset -2px -2px 0 0 #E6E6E6,
+inset 2px 2px 0 0 #000000;

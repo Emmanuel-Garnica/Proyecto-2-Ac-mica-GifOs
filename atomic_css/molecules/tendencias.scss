@@ -1,0 +1,82 @@
+@import '../utilities/variables.scss';
+.container_trending {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    .title_trending {
+        display: flex;
+        align-items: center;
+        background-color: #FFFAFE;
+        width: 1200px;
+        height: 32px;
+        margin-bottom: 16px;
+        padding-left: 7px;
+        line-height: 18px;
+        box-shadow: $secondary-shadow;
+        border: 1px solid #E6BBE2;
+        box-sizing: border-box;
+    }
+    .content_trending_boxes {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+        width: 1200px;
+        .trending_box {
+            display: flex;
+            position: relative;
+            margin-bottom: 16px;
+            img {
+                height: 298px;
+                width: 288px;
+                background-color: $gray-window;
+                &:hover {
+                    cursor: pointer;
+                    outline: 1px dotted $shadow-color;
+                    box-shadow: $primary-shadow;
+                }
+            }
+            span {
+                position: absolute;
+                display: block;
+                bottom: 2px;
+                left: 2px;
+                height: 24px;
+                width: 284px;
+                padding: 3px 0 3px 3px;
+                box-sizing: border-box;
+                background-image: $gradient;
+                color: $white-text;
+                font-family: $secondary-font;
+                line-height: 18px;
+            }
+        }
+        .trending_box2 {
+            display: flex;
+            position: relative;
+            margin-bottom: 16px;
+            img {
+                height: 298px;
+                width: 590px;
+                background-color: $gray-window;
+                &:hover {
+                    cursor: pointer;
+                    outline: 1px dotted $shadow-color;
+                    box-shadow: $primary-shadow;
+                }
+            }
+            span {
+                position: absolute;
+                bottom: 2px;
+                left: 2px;
+                height: 24px;
+                width: 586px;
+                padding: 3px 0 3px 3px;
+                box-sizing: border-box;
+                background-image: $gradient;
+                color: $white-text;
+                font-family: $secondary-font;
+                line-height: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.container_trending {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px; }
+  .container_trending .title_trending {
+    display: flex;
+    align-items: center;
+    background-color: #FFFAFE;
+    width: 1200px;
+    height: 32px;
+    margin-bottom: 16px;
+    padding-left: 7px;
+    line-height: 18px;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    border: 1px solid #E6BBE2;
+    box-sizing: border-box; }
+  .container_trending .content_trending_boxes {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    width: 1200px; }
+    .container_trending .content_trending_boxes .trending_box {
+      display: flex;
+      position: relative;
+      margin-bottom: 16px; }
+      .container_trending .content_trending_boxes .trending_box img {
+        height: 298px;
+        width: 288px;
+        background-color: #E6E6E6; }
+        .container_trending .content_trending_boxes .trending_box img:hover {
+          cursor: pointer;
+          outline: 1px dotted #110038;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+      .container_trending .content_trending_boxes .trending_box span {
+        position: absolute;
+        display: block;
+        bottom: 2px;
+        left: 2px;
+        height: 24px;
+        width: 284px;
+        padding: 3px 0 3px 3px;
+        box-sizing: border-box;
+        background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+        color: white;
+        font-family: "Chakra Petch Bold", sans-serif;
+        line-height: 18px; }
+    .container_trending .content_trending_boxes .trending_box2 {
+      display: flex;
+      position: relative;
+      margin-bottom: 16px; }
+      .container_trending .content_trending_boxes .trending_box2 img {
+        height: 298px;
+        width: 590px;
+        background-color: #E6E6E6; }
+        .container_trending .content_trending_boxes .trending_box2 img:hover {
+          cursor: pointer;
+          outline: 1px dotted #110038;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+      .container_trending .content_trending_boxes .trending_box2 span {
+        position: absolute;
+        bottom: 2px;
+        left: 2px;
+        height: 24px;
+        width: 586px;
+        padding: 3px 0 3px 3px;
+        box-sizing: border-box;
+        background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+        color: white;
+        font-family: "Chakra Petch Bold", sans-serif;
+        line-height: 18px; }
