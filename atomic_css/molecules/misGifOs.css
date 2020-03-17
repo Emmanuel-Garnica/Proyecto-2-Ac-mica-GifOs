@@ -27,3 +27,8 @@
         height: 298px;
         width: 288px;
         background-color: #E6E6E6; }
+  .container_myGifOs .content_myGifOs_boxes.night {
+    background-color: #110038; }
+
+.container_myGifOs.night {
+  background-color: #110038; }

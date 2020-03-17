@@ -35,7 +35,7 @@
         color: white;
         font-family: "Chakra Petch Bold", sans-serif;
         line-height: 18px; }
-      .container_suggestions .content_suggestion_boxes .suggestion_box span.night {
+      .container_suggestions .content_suggestion_boxes .suggestion_box .sb_title.night {
         background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); }
       .container_suggestions .content_suggestion_boxes .suggestion_box img {
         position: absolute;
@@ -71,6 +71,8 @@
           cursor: pointer;
           outline: 1px dotted #110038;
           outline-offset: -4px; }
+      .container_suggestions .content_suggestion_boxes .suggestion_box .more.night {
+        background-color: #2E32FB; }
   .container_suggestions .content_suggestion_boxes.night {
     background-color: #110038; }
 

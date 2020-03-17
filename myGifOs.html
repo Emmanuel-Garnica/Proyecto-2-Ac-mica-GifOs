@@ -9,38 +9,38 @@
     <title>Mis GifOs</title>
 </head>
 
-<body>
+<body class="day">
 
-    <span class="visits">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</span>
+    <span class="visits day">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</span>
 
-    <header class="banner">
+    <header class="banner day">
 
-        <img class="logo" src="assets/images/gifOF_logo.png" alt="Logo página web GifOs">
+        <img class="logo day" src="assets/images/gifOF_logo.png" alt="Logo página web GifOs">
 
-        <div class="banner_butt">
-            <a href="#" class="create_gif">Crear Guifos</a>
+        <div class="banner_butt day">
+            <a href="#" class="create_gif day">Crear Guifos</a>
             <div class="containermenu">
                 <div class="contdropdown">
-                    <span class="sel_topic" onclick="desplegarMenu()">Elegir Tema</span>
-                    <div class="dropdown">
+                    <span class="sel_topic day" onclick="desplegarMenu()">Elegir Tema</span>
+                    <div class="dropdown day" onclick="desplegarMenu()">
                         <img src="assets/images/dropdown.svg" alt="flecha hacia abajo de menú desplegable">
                     </div>
                 </div>
                 <div class="menu">
-                    <span>Sailor Day</span>
-                    <span>Sailor Night</span>
+                    <span id="SD" class="SD day" onclick="cambiarATemaDay()">Sailor Day</span>
+                    <span id="SN" class="SN day" onclick="cambiarATemaNight()">Sailor Night</span>
                 </div>
             </div>
-            <a href="##" class="mygifos">Mis Guifos</a>
+            <a href="myGifOs.html" class="mygifos day">Mis Guifos</a>
         </div>
 
     </header>
 
-    <section class="container_myGifOs">
+    <section class="container_myGifOs day">
 
         <span class="title_myGifOs">Mis Guifos</span>
 
-        <div class="content_myGifOs_boxes">
+        <div class="content_myGifOs_boxes day">
 
             <div class="myGifOs_box"><img src="" alt="Mi gif #1"></div>
             <div class="myGifOs_box"><img src="" alt="Mi gif #2"></div>
@@ -58,6 +58,10 @@
         </div>
 
     </section>
+
+    <script src="assets/scripts/switch_temas.js"></script>
+    <script src="assets/scripts/dropdown.js"></script>
+    <script src="assets/scripts/buscador.js"></script>
 
 </body>
 

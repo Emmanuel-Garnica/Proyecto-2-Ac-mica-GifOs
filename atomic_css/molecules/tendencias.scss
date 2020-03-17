@@ -78,5 +78,15 @@
                 line-height: 18px;
             }
         }
+        span.night {
+            background-image: $dark-gradient;
+        }
     }
+    .content_trending_boxes.night {
+        background-color: $dark-color;
+    }
+}
+
+.container_trending.night {
+    background-color: $dark-color;
 }

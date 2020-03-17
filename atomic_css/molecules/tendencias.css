@@ -68,3 +68,10 @@
         color: white;
         font-family: "Chakra Petch Bold", sans-serif;
         line-height: 18px; }
+    .container_trending .content_trending_boxes span.night {
+      background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); }
+  .container_trending .content_trending_boxes.night {
+    background-color: #110038; }
+
+.container_trending.night {
+  background-color: #110038; }

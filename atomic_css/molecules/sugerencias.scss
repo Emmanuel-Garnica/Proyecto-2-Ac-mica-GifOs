@@ -38,7 +38,7 @@
                 font-family: $secondary-font;
                 line-height: 18px;
             }
-            span.night {
+            .sb_title.night {
                 background-image: $dark-gradient;
             }
             img {
@@ -80,13 +80,16 @@
                     outline-offset: -4px;
                 }
             }
+            .more.night {
+                background-color: $dark-button;
+            }
         }
     }
     .content_suggestion_boxes.night {
-        background-color: #110038
+        background-color: $dark-color
     }
 }
 
 .container_suggestions.night {
-    background-color: #110038;
+    background-color: $dark-color;
 }

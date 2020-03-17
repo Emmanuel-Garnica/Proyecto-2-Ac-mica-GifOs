@@ -4,7 +4,7 @@ body.night,
 .logo.night,
 .banner_butt.night,
 .mygifos.night {
-    background-color: #110038;
+    background-color: $dark-color;
 }
 
 .visits {
@@ -133,6 +133,7 @@ body.night,
             box-sizing: border-box;
             z-index: 3;
             span {
+                position: relative;
                 display: flex;
                 align-items: center;
                 font-size: 16px;
@@ -143,6 +144,31 @@ body.night,
                 background-color: $gray-button;
                 border: 1px solid #808080;
                 box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                &.SD.day {
+                    background-color: #FFF4FD;
+                    &::before {
+                        content: "";
+                        width: 8px;
+                        height: 1px;
+                        border: 1px solid $shadow-color;
+                        box-sizing: border-box;
+                        position: absolute;
+                        bottom: 6px;
+                    }
+                }
+                &.SN.night {
+                    background-color: $dark-button;
+                    color: $white-text;
+                    &::before {
+                        content: "";
+                        width: 8px;
+                        height: 1px;
+                        border: 1px solid $white-text;
+                        box-sizing: border-box;
+                        position: absolute;
+                        bottom: 6px;
+                    }
+                }
             }
         }
     }
