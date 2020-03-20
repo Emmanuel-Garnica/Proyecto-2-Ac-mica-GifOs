@@ -33,11 +33,12 @@
                     cursor: pointer;
                     outline: 1px dotted $shadow-color;
                     box-shadow: $primary-shadow;
+                    outline-offset: -4px;
                 }
             }
             span {
                 position: absolute;
-                display: block;
+                display: none;
                 bottom: 2px;
                 left: 2px;
                 height: 24px;
@@ -48,6 +49,11 @@
                 color: $white-text;
                 font-family: $secondary-font;
                 line-height: 18px;
+            }
+            &:hover {
+                span {
+                    display: block;
+                }
             }
         }
         .trending_box2 {
@@ -62,9 +68,11 @@
                     cursor: pointer;
                     outline: 1px dotted $shadow-color;
                     box-shadow: $primary-shadow;
+                    outline-offset: -4px;
                 }
             }
             span {
+                display: none;
                 position: absolute;
                 bottom: 2px;
                 left: 2px;
@@ -76,6 +84,11 @@
                 color: $white-text;
                 font-family: $secondary-font;
                 line-height: 18px;
+            }
+            &:hover {
+                span {
+                    display: block;
+                }
             }
         }
         span.night {
