@@ -367,11 +367,17 @@ body.night,
       display: flex;
       position: relative;
       margin-bottom: 16px; }
-      .container_trending .content_trending_boxes .trending_box img {
+      .container_trending .content_trending_boxes .trending_box div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 298px;
         width: 288px;
         background-color: #E6E6E6; }
-        .container_trending .content_trending_boxes .trending_box img:hover {
+        .container_trending .content_trending_boxes .trending_box div img {
+          height: 294px;
+          width: 284px; }
+        .container_trending .content_trending_boxes .trending_box div:hover {
           cursor: pointer;
           outline: 1px dotted #110038;
           box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
@@ -395,11 +401,17 @@ body.night,
       display: flex;
       position: relative;
       margin-bottom: 16px; }
-      .container_trending .content_trending_boxes .trending_box2 img {
+      .container_trending .content_trending_boxes .trending_box2 div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 298px;
         width: 590px;
         background-color: #E6E6E6; }
-        .container_trending .content_trending_boxes .trending_box2 img:hover {
+        .container_trending .content_trending_boxes .trending_box2 div img {
+          height: 294px;
+          width: 586px; }
+        .container_trending .content_trending_boxes .trending_box2 div:hover {
           cursor: pointer;
           outline: 1px dotted #110038;
           box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;

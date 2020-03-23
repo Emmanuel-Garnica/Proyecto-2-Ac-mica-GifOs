@@ -25,10 +25,17 @@
             display: flex;
             position: relative;
             margin-bottom: 16px;
-            img {
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 height: 298px;
                 width: 288px;
                 background-color: $gray-window;
+                img {
+                    height: 294px;
+                    width: 284px;
+                }
                 &:hover {
                     cursor: pointer;
                     outline: 1px dotted $shadow-color;
@@ -60,10 +67,17 @@
             display: flex;
             position: relative;
             margin-bottom: 16px;
-            img {
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 height: 298px;
                 width: 590px;
                 background-color: $gray-window;
+                img {
+                    height: 294px;
+                    width: 586px;
+                }
                 &:hover {
                     cursor: pointer;
                     outline: 1px dotted $shadow-color;

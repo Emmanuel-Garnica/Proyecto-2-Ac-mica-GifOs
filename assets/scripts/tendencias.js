@@ -19,7 +19,7 @@ function suggestionsGif() {
         .then((text) => {
             let i = 0;
             text.forEach((e) => {
-                document.querySelectorAll(".gif_result_title")[i].innerText = e
+                document.querySelectorAll(".gif_result_title")[i].innerHTML = e
                 i++;
             })
         })
