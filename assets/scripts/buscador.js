@@ -1,33 +1,79 @@
-function buscarGif() {
-    let search = document.querySelector("input").value;
-    const apiKey = "nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh";
-    let found = fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
-        .then((res) => res.json())
-        .then((data) => data.data)
-        .then((array) => array.map((images) => images.images.preview_webp.url))
-        .then((urls) => {
-            let i = 0;
-            urls.forEach((e) => {
-                document.querySelectorAll(".gif_result")[i].setAttribute("src", e)
-                i++;
+window.onload = function() {
+    function buscarGif() {
+        let search = document.querySelector("input").value;
+        const apiKey = "nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh";
+        let found = fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
+            .then((res) => res.json())
+            .then((data) => data.data)
+            .then((array) => array.map((images) => images.images.preview_webp.url))
+            .then((urls) => {
+                let i = 0;
+                urls.forEach((e) => {
+                    document.querySelectorAll(".gif_result")[i].setAttribute("src", e)
+                    i++;
+                })
+            })
+
+        document.querySelector(".title_trending").innerHTML = search + ":";
+
+        fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
+            .then((response) => response.json())
+            .then((data) => data.data)
+            .then((array) => array.map((title) => title.title))
+            .then((text) => {
+                let i = 0;
+                text.forEach((e) => {
+                    document.querySelectorAll(".gif_result_title")[i].innerHTML = e
+                    i++;
+                })
+            })
+    }
+
+    let input = document.getElementsByTagName("input")[0];
+
+    if (input.value = "") {
+
+        let suggestions = document.querySelector(".subcontainer2_search");
+        // let search_button = document.querySelector(".button_search");
+        // let boton = document.querySelector(".button_search");
+
+        suggestions.style.display = "none";
+
+    } else {
+
+        let input = document.getElementsByTagName("input")[0];
+        input.addEventListener("keypress", () => {
+
+            let suggestions = document.querySelector(".subcontainer2_search");
+            let search_button = document.querySelector(".button_search");
+            let boton = document.querySelector(".button_search");
+
+            suggestions.style.display = "flex";
+
+            search_button.getElementsByTagName("img")[0].setAttribute("src", "./assets/images/lupa.svg");
+
+            search_button.getElementsByTagName("img")[0].style.backgroundColor = "#F7C9F3";
+
+            search_button.getElementsByTagName("span")[0].style.backgroundColor = "#F7C9F3";
+
+            search_button.getElementsByTagName("span")[0].style.color = "#110038";
+
+            search_button.style.backgroundColor = "#F7C9F3";
+
+            search_button.style.border = "1px solid #110038";
+
+            search_button.style.boxShadow = "inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF";
+
+
+            boton.addEventListener("mouseover", (event) => {
+                event.target.style.backgroundColor = "#E6BBE2";
+            })
+
+            boton.addEventListener("mouseout", (event) => {
+                event.target.style.backgroundColor = "#F7C9F3";
             })
         })
 
-    document.querySelector(".title_trending").innerHTML = search + ":";
+    }
 
-    fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
-        .then((response) => response.json())
-        .then((data) => data.data)
-        .then((array) => array.map((title) => title.title))
-        .then((text) => {
-            let i = 0;
-            text.forEach((e) => {
-                document.querySelectorAll(".gif_result_title")[i].innerHTML = e
-                i++;
-            })
-        })
 }
-
-// window.onload = function trendingGifs() {
-
-// }

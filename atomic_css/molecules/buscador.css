@@ -56,7 +56,9 @@
       border: 1px solid #808080;
       box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF; }
       .container_search .subcontainer_search .button_search:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        outline: 1px dotted #110038;
+        outline-offset: -4px; }
       .container_search .subcontainer_search .button_search img {
         background-color: #E6E6E6;
         height: 16px;
@@ -93,4 +95,5 @@
       .container_search .subcontainer2_search span:hover {
         cursor: pointer;
         outline: 1px dotted #110038;
-        outline-offset: -4px; }
+        outline-offset: -4px;
+        background-color: #DBDBDB; }
