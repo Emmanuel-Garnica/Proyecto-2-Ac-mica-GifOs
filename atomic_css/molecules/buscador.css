@@ -69,7 +69,6 @@
         color: #B4B4B4;
         background-color: #E6E6E6; }
   .container_search .subcontainer2_search {
-    display: none;
     flex-direction: column;
     position: absolute;
     top: 99px;
@@ -97,3 +96,15 @@
         outline: 1px dotted #110038;
         outline-offset: -4px;
         background-color: #DBDBDB; }
+
+.display_flex {
+  display: flex; }
+
+.display_none {
+  display: none; }
+
+.img_bgcolor2 {
+  background-color: #F7C9F3; }
+
+.txt_dark {
+  color: #110038; }

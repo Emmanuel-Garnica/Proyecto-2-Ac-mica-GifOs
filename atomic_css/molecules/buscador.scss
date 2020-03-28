@@ -83,7 +83,6 @@
         }
     }
     .subcontainer2_search {
-        display: none;
         flex-direction: column;
         position: absolute;
         top: 99px;
@@ -116,4 +115,20 @@
             }
         }
     }
+}
+
+.display_flex {
+    display: flex;
+}
+
+.display_none {
+    display: none;
+}
+
+.img_bgcolor2 {
+    background-color: #F7C9F3;
+}
+
+.txt_dark {
+    color: $dark-color;
 }
