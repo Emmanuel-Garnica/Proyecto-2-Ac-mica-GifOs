@@ -1,1 +1,169 @@
 @import '../utilities/variables.scss';
+.banner {
+    position: relative;
+    .banner_arrow {
+        position: absolute;
+        left: -39px;
+        bottom: 38px;
+        margin: auto;
+    }
+}
+
+.container_createGif {
+    width: 100%;
+}
+
+.createGif {
+    display: none;
+}
+
+.createGif div {
+    position: relative;
+    width: 684px;
+    height: 412px;
+    background-color: $gray-window;
+    box-shadow: $primary-shadow;
+    box-sizing: border-box;
+    padding: 54px 93px 0 73px;
+    margin-left: 378px;
+    margin-bottom: 153px;
+    i,
+    b,
+    span,
+    p {
+        background-color: $gray-window;
+    }
+    span {
+        display: block;
+    }
+    .createGif_title {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 3px;
+        left: 3px;
+        width: 678px;
+        height: 24px;
+        background-image: $gradient;
+        color: $white-text;
+        font-family: $secondary-font;
+        box-sizing: border-box;
+        padding-left: 4px;
+    }
+    img {
+        position: absolute;
+        left: 25px;
+    }
+     :nth-child(3) {
+        font-family: $secondary-font;
+        font-size: 16px;
+        margin-bottom: 17px;
+    }
+    p {
+        margin-bottom: 28px;
+    }
+    .cancel_button,
+    .start_button {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 36px;
+        align-items: center;
+        width: 144px;
+        height: 36px;
+        font-size: 16px;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    }
+    .start_button {
+        right: 36px;
+        background-color: $primary-color-one;
+    }
+    .cancel_button {
+        right: 196px;
+        background-color: $light-pink-button;
+    }
+}
+
+.recordGif_window {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 860px;
+    height: 548px;
+    background-color: $gray-window;
+    box-shadow: $primary-shadow;
+    box-sizing: border-box;
+    padding: 0 14px 0 0;
+    margin-left: 265px;
+    margin-bottom: 292px;
+    span {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        width: 854px;
+        height: 24px;
+        box-sizing: border-box;
+        padding-left: 4px;
+        background-image: $gradient;
+        color: $white-text;
+        font-family: $secondary-font;
+    }
+    .close {
+        position: absolute;
+        right: 13px;
+        top: 8px;
+    }
+    video {
+        width: 838px;
+        height: 440px;
+        margin: 35px 0 0 8px;
+        border: 1px solid #979797;
+        box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    }
+    .buttons_recordGif {
+        display: flex;
+        background-color: $gray-window;
+        img {
+            position: absolute;
+            right: 159px;
+            bottom: 16px;
+            padding: 8.5px 8px;
+            background-color: $primary-color-one;
+            border: 1px solid #110038;
+            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+        }
+        button {
+            position: absolute;
+            width: 144px;
+            height: 36px;
+            color: $shadow-color;
+            font-size: 16px;
+            background-color: $primary-color-one;
+            border: 1px solid #110038;
+            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+        }
+        .capture_button,
+        .upload_button {
+            bottom: 16px;
+            right: 16px;
+        }
+        .upload_button {
+            display: none;
+        }
+        .repeat_button {
+            display: none;
+            bottom: 16px;
+            right: 174px;
+            background-color: #FFF4FD;
+        }
+        .cancel_button2 {
+            display: none;
+            bottom: 16px;
+            right: 14px;
+            background-color: #FFF4FD;
+        }
+    }
+}

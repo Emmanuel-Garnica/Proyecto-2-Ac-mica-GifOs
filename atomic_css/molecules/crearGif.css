@@ -1,0 +1,143 @@
+.banner {
+  position: relative; }
+  .banner .banner_arrow {
+    position: absolute;
+    left: -39px;
+    bottom: 38px;
+    margin: auto; }
+
+.container_createGif {
+  width: 100%; }
+
+.createGif {
+  display: none; }
+
+.createGif div {
+  position: relative;
+  width: 684px;
+  height: 412px;
+  background-color: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  box-sizing: border-box;
+  padding: 54px 93px 0 73px;
+  margin-left: 378px;
+  margin-bottom: 153px; }
+  .createGif div i,
+  .createGif div b,
+  .createGif div span,
+  .createGif div p {
+    background-color: #E6E6E6; }
+  .createGif div span {
+    display: block; }
+  .createGif div .createGif_title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 3px;
+    left: 3px;
+    width: 678px;
+    height: 24px;
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    color: white;
+    font-family: "Chakra Petch Bold", sans-serif;
+    box-sizing: border-box;
+    padding-left: 4px; }
+  .createGif div img {
+    position: absolute;
+    left: 25px; }
+  .createGif div :nth-child(3) {
+    font-family: "Chakra Petch Bold", sans-serif;
+    font-size: 16px;
+    margin-bottom: 17px; }
+  .createGif div p {
+    margin-bottom: 28px; }
+  .createGif div .cancel_button,
+  .createGif div .start_button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 36px;
+    align-items: center;
+    width: 144px;
+    height: 36px;
+    font-size: 16px;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+  .createGif div .start_button {
+    right: 36px;
+    background-color: #F7C9F3; }
+  .createGif div .cancel_button {
+    right: 196px;
+    background-color: #FFF4FD; }
+
+.recordGif_window {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 860px;
+  height: 548px;
+  background-color: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  box-sizing: border-box;
+  padding: 0 14px 0 0;
+  margin-left: 265px;
+  margin-bottom: 292px; }
+  .recordGif_window span {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 854px;
+    height: 24px;
+    box-sizing: border-box;
+    padding-left: 4px;
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    color: white;
+    font-family: "Chakra Petch Bold", sans-serif; }
+  .recordGif_window .close {
+    position: absolute;
+    right: 13px;
+    top: 8px; }
+  .recordGif_window video {
+    width: 838px;
+    height: 440px;
+    margin: 35px 0 0 8px;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000; }
+  .recordGif_window .buttons_recordGif {
+    display: flex;
+    background-color: #E6E6E6; }
+    .recordGif_window .buttons_recordGif img {
+      position: absolute;
+      right: 159px;
+      bottom: 16px;
+      padding: 8.5px 8px;
+      background-color: #F7C9F3;
+      border: 1px solid #110038;
+      box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+    .recordGif_window .buttons_recordGif button {
+      position: absolute;
+      width: 144px;
+      height: 36px;
+      color: #110038;
+      font-size: 16px;
+      background-color: #F7C9F3;
+      border: 1px solid #110038;
+      box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+    .recordGif_window .buttons_recordGif .capture_button,
+    .recordGif_window .buttons_recordGif .upload_button {
+      bottom: 16px;
+      right: 16px; }
+    .recordGif_window .buttons_recordGif .upload_button {
+      display: none; }
+    .recordGif_window .buttons_recordGif .repeat_button {
+      display: none;
+      bottom: 16px;
+      right: 174px;
+      background-color: #FFF4FD; }
+    .recordGif_window .buttons_recordGif .cancel_button2 {
+      display: none;
+      bottom: 16px;
+      right: 14px;
+      background-color: #FFF4FD; }
