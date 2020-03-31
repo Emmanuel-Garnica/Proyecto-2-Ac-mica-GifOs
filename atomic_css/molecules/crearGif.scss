@@ -85,6 +85,10 @@
     }
 }
 
+.recordGif {
+    display: none;
+}
+
 .recordGif_window {
     display: flex;
     flex-direction: column;
@@ -165,5 +169,76 @@
             right: 14px;
             background-color: #FFF4FD;
         }
+    }
+}
+
+.uploadGif_window {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 721px;
+    height: 391px;
+    background-color: $gray-window;
+    box-shadow: $primary-shadow;
+    box-sizing: border-box;
+    margin: 0 0 180px 360px;
+     :first-child {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 3px;
+        top: 3px;
+        width: 715px;
+        height: 24px;
+        background-image: $gradient;
+        color: $white-text;
+        font-family: $secondary-font;
+        box-sizing: border-box;
+        padding-left: 4px;
+    }
+    img {
+        position: absolute;
+        right: 7px;
+        top: 7px;
+    }
+    video {
+        width: 371px;
+        height: 196px;
+        margin: 54px 0 0 24px;
+        border: 1px solid #979797;
+        box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    }
+     :nth-child(4) {
+        position: absolute;
+        left: 419px;
+        top: 76px;
+        font-family: $secondary-font;
+        font-size: 16px;
+        background-color: $gray-window;
+    }
+    button {
+        width: 256px;
+        height: 36px;
+        background-color: $light-pink-button;
+        font-size: 16px;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+        border: 1px solid #110038;
+    }
+     :nth-child(5) {
+        position: absolute;
+        left: 419px;
+        top: 114px;
+    }
+     :nth-child(6) {
+        position: absolute;
+        left: 419px;
+        top: 164px;
+    }
+     :last-child {
+        position: absolute;
+        bottom: 44px;
+        right: 46px;
+        width: 144px;
+        background-color: $primary-color-one;
     }
 }
