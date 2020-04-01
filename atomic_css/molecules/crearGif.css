@@ -6,11 +6,17 @@
     bottom: 38px;
     margin: auto; }
 
+button:hover {
+  cursor: pointer;
+  outline: 1px dotted #110038;
+  outline-offset: -4px;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+
 .container_createGif {
   width: 100%; }
 
 .createGif {
-  display: none; }
+  display: block; }
 
 .createGif div {
   position: relative;
@@ -139,11 +145,16 @@
       bottom: 16px;
       right: 174px;
       background-color: #FFF4FD; }
+      .recordGif_window .buttons_recordGif .repeat_button:hover {
+        background-color: #F0E5EE; }
     .recordGif_window .buttons_recordGif .cancel_button2 {
       display: none;
       bottom: 16px;
       right: 14px;
       background-color: #FFF4FD; }
+
+.uploadGif {
+  display: none; }
 
 .uploadGif_window {
   display: flex;
