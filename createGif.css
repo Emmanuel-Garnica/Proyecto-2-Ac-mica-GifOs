@@ -300,10 +300,19 @@ button:hover {
       background-color: #F7C9F3;
       border: 1px solid #110038;
       box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+    .recordGif_window .buttons_recordGif #recordImg {
+      display: none;
+      padding: 7px;
+      background-color: #FF6161; }
     .recordGif_window .buttons_recordGif .capture_button,
+    .recordGif_window .buttons_recordGif .finish_capture_button,
     .recordGif_window .buttons_recordGif .upload_button {
       bottom: 16px;
       right: 16px; }
+    .recordGif_window .buttons_recordGif .finish_capture_button {
+      display: none;
+      background-color: #FF6161;
+      color: white; }
     .recordGif_window .buttons_recordGif .upload_button {
       display: none; }
     .recordGif_window .buttons_recordGif .repeat_button {
