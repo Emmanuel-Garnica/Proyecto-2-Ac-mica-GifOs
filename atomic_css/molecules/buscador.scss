@@ -70,7 +70,8 @@
                 outline-offset: -4px;
             }
             img {
-                background-color: $gray-window;
+                background-color: inherit;
+                // background-color: $gray-window;
                 height: 16px;
                 margin: 10px;
             }
@@ -78,7 +79,8 @@
                 font-size: 16px;
                 line-height: 18px;
                 color: #B4B4B4;
-                background-color: $gray-window;
+                background-color: inherit;
+                // background-color: $gray-window;
             }
         }
     }

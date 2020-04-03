@@ -60,14 +60,14 @@
         outline: 1px dotted #110038;
         outline-offset: -4px; }
       .container_search .subcontainer_search .button_search img {
-        background-color: #E6E6E6;
+        background-color: inherit;
         height: 16px;
         margin: 10px; }
       .container_search .subcontainer_search .button_search span {
         font-size: 16px;
         line-height: 18px;
         color: #B4B4B4;
-        background-color: #E6E6E6; }
+        background-color: inherit; }
   .container_search .subcontainer2_search {
     flex-direction: column;
     position: absolute;

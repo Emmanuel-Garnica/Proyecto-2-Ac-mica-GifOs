@@ -43,7 +43,9 @@ function startRecording() {
     finishCaptureButton.style.display = "block";
     recordImg.style.display = "block";
 
-    recorder = RecordRTC(stream, {
+    let mediaStream = document.querySelector(".myGifOs_box");
+
+    let recorder = new MediaStreamRecorder(mediaStream, {
         type: 'gif',
         frameRate: 1,
         quality: 10,
@@ -54,6 +56,8 @@ function startRecording() {
         },
     });
 
+    recorder.startRecording();
+    console.log("Grabación iniciada!");
     // recorder.on("startRecord", function() {
 
     //     console.log("Grabación iniciada!")

@@ -31,6 +31,9 @@ function verMasJonathan() {
                 i++;
             })
         })
+    document.querySelector(".container_trending").scrollIntoView({
+        behavior: "smooth"
+    })
 }
 
 function verMasSailor() {
@@ -61,6 +64,9 @@ function verMasSailor() {
                 i++;
             })
         })
+    document.querySelector(".container_trending").scrollIntoView({
+        behavior: "smooth"
+    })
 }
 
 function verMasFabFive() {
@@ -91,6 +97,9 @@ function verMasFabFive() {
                 i++;
             })
         })
+    document.querySelector(".container_trending").scrollIntoView({
+        behavior: "smooth"
+    })
 }
 
 function verMasUnicorns() {
@@ -121,4 +130,7 @@ function verMasUnicorns() {
                 i++;
             })
         })
+    document.querySelector(".container_trending").scrollIntoView({
+        behavior: "smooth"
+    })
 }
