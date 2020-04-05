@@ -279,7 +279,18 @@ button:hover {
     height: 440px;
     margin: 35px 0 0 8px;
     border: 1px solid #979797;
-    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000; }
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    padding: 2px; }
+  .recordGif_window #preview {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 8px;
+    width: 838px;
+    height: 440px;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    padding: 2px; }
   .recordGif_window .buttons_recordGif {
     display: flex;
     background-color: #E6E6E6; }
