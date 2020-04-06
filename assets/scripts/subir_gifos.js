@@ -1,4 +1,4 @@
-function allowRecord() {
+document.querySelector(".start_button").addEventListener("click", () => {
 
     document.querySelector(".recordGif").style.display = "block";
     document.querySelector(".createGif").style.display = "none";
@@ -6,14 +6,13 @@ function allowRecord() {
     // Pide permisos al usuario
 
     navigator.mediaDevices.getUserMedia({
-        audio: false,
-        video: {
-            height: 440,
-            width: 838
-        }
-    })
-
-    .then(function(recordGif) {
+            audio: false,
+            video: {
+                height: 440,
+                width: 838
+            }
+        })
+        .then(function(recordGif) {
 
             // Conecta lo que captura la cámara con el contenedor del video
 
@@ -65,12 +64,12 @@ function allowRecord() {
 
                 let form = new FormData();
 
-                form.append("archivo", recorder.getBlob(), "myGif.gif");
-                console.log(form.get("archivo"));
+                form.append("file", recorder.getBlob(), "myGif.gif");
+                console.log(form.get("file"));
 
                 // Crea una URL para asignarsela a un objeto del DOM
 
-                let createdUrl = URL.createObjectURL(form.get("archivo"));
+                let createdUrl = URL.createObjectURL(form.get("file"));
                 vistaPrevia.setAttribute("src", createdUrl);
 
                 // Oculta botón de stop y muestra botones siguientes
@@ -118,24 +117,27 @@ function allowRecord() {
 
                 let formdata = new FormData();
 
-                formdata.append("api_key", "nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh");
-                formdata.append("archivo", recorder.getBlob(), "gif1.gif");
+                // formdata.append("api_key", "nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh");
+                formdata.append("file", recorder.getBlob(), "otromasgif.gif");
 
                 let requestOptions = {
                     method: 'POST',
                     body: formdata,
-                    redirect: 'follow'
+                    redirect: 'follow',
+                    mode: 'no-cors'
                 };
 
-                await fetch("https://upload.giphy.com/v1/gifs", requestOptions)
+                await fetch("https://upload.giphy.com/v1/gifs?api_key=nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh", requestOptions)
                     .then(response => response.text())
-                    .then(result => result.split('"', 6))
-                    .then((result) => {
+                    .then(console.log)
+                    // .then(dividir => dividir.split(" "))
+                    // .then(dividido => console.log(dividido[0]))
+                    /*.then((result) => {
                         (console.log("Gif Id is: " + result[5]));
                         return gifId = result[5]
-                    })
+                    })*/
                     // .then(result => console.log(result))
-                    .catch(error => console.log('error', error));
+                    .catch(console.error);
 
             })
 
@@ -146,4 +148,4 @@ function allowRecord() {
 
         })
 
-}
+})
