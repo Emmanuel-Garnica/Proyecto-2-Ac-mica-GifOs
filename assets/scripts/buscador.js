@@ -1,3 +1,13 @@
+document.querySelector("input").addEventListener("keyup", (variable) => {
+
+    if (variable.key === "Enter") {
+        document.querySelector(".subcontainer2_search").style.display = "none";
+        buscarGif()
+    }
+
+
+})
+
 function buscarGif() {
     let search = document.querySelector("input").value;
     const apiKey = "nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh";
@@ -88,7 +98,7 @@ function desplegarSugerencias() {
 
             search_button.style.boxShadow = "inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF";
 
-
+            // once con booleano
             boton.addEventListener("mouseover", (event) => {
                 event.target.style.backgroundColor = "#E6BBE2";
             })

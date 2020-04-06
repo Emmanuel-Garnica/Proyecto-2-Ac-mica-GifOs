@@ -117,28 +117,29 @@ document.querySelector(".start_button").addEventListener("click", () => {
 
                 let formdata = new FormData();
 
-                // formdata.append("api_key", "nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh");
-                formdata.append("file", recorder.getBlob(), "otromasgif.gif");
+                formdata.append("api_key", "nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh");
+                formdata.append("file", recorder.getBlob(), "myGif.gif");
 
                 let requestOptions = {
                     method: 'POST',
                     body: formdata,
-                    redirect: 'follow',
-                    mode: 'no-cors'
+                    redirect: 'follow'
                 };
 
-                await fetch("https://upload.giphy.com/v1/gifs?api_key=nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh", requestOptions)
-                    .then(response => response.text())
+                let myID;
+
+                await fetch("https://upload.giphy.com/v1/gifs", requestOptions)
+                    .then(response => response.json())
+                    .then(id => myID = id.data.id)
                     .then(console.log)
-                    // .then(dividir => dividir.split(" "))
-                    // .then(dividido => console.log(dividido[0]))
-                    /*.then((result) => {
-                        (console.log("Gif Id is: " + result[5]));
-                        return gifId = result[5]
-                    })*/
-                    // .then(result => console.log(result))
                     .catch(console.error);
 
+                // https://media.giphy.com/media/"id"/giphy.gif URL DE MANUEL
+
+                await fetch("https://api.giphy.com/v1/gifs/" + myID + "?api_key=nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh&")
+                    .then(response => response.json())
+                    .then(geturl => myID = geturl.data.images.original.url);
+                console.log(myID);
             })
 
         })
