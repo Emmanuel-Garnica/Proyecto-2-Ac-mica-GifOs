@@ -30,6 +30,10 @@ document.querySelector(".start_button").addEventListener("click", () => {
             let repeatButton = document.querySelector(".repeat_button");
             let uploadButton = document.querySelector(".upload_button");
             let vistaPrevia = document.getElementById("preview");
+            let vistaPreviaUpload = document.getElementById("upload_preview");
+            let copyButton = document.querySelector(".copy_button");
+            let downloadButton = document.querySelector(".download_button");
+            let okButton = document.querySelector(".ok_button");
             const apiKey = "nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh";
 
             // Se crea objeto recorder desde la libreria
@@ -113,6 +117,9 @@ document.querySelector(".start_button").addEventListener("click", () => {
                 });
             })
 
+            let myID;
+            let myURL;
+
             uploadButton.addEventListener("click", async function() {
 
                 let formdata = new FormData();
@@ -126,8 +133,6 @@ document.querySelector(".start_button").addEventListener("click", () => {
                     redirect: 'follow'
                 };
 
-                let myID;
-
                 await fetch("https://upload.giphy.com/v1/gifs", requestOptions)
                     .then(response => response.json())
                     .then(id => myID = id.data.id)
@@ -138,8 +143,58 @@ document.querySelector(".start_button").addEventListener("click", () => {
 
                 await fetch("https://api.giphy.com/v1/gifs/" + myID + "?api_key=nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh&")
                     .then(response => response.json())
-                    .then(geturl => myID = geturl.data.images.original.url);
-                console.log(myID);
+                    .then(geturl => myURL = geturl.data.images.original.url);
+
+                localStorage.setItem(myID, myURL);
+
+                vistaPreviaUpload.setAttribute("src", myURL);
+
+                document.querySelector(".uploadGif").style.display = "block";
+
+                document.querySelector(".recordGif").style.display = "none";
+
+            })
+
+            copyButton.addEventListener("click", function() {
+
+
+
+            })
+
+            downloadButton.addEventListener("click", function() {
+
+
+
+            })
+
+            okButton.addEventListener("click", function() {
+
+                document.location.reload();
+
+                // document.querySelector(".uploadGif").style.display = "none";
+
+                // document.querySelector(".createGif").style.display = "block";
+
+                // video_Container.style.display = "block";
+                // vistaPrevia.style.display = "none";
+                // repeatButton.style.display = "none";
+                // uploadButton.style.display = "none";
+                // captureButton.style.display = "block";
+                // cameraImg.style.display = "block";
+
+                // recorder.destroy();
+
+                // recorder = RecordRTC(recordGif, {
+                //     type: 'gif',
+                //     frameRate: 1,
+                //     quality: 10,
+                //     width: 360,
+                //     hidden: 240,
+                //     onGifRecordingStarted: function() {
+                //         console.log('recorder iniciado')
+                //     },
+                // });
+
             })
 
         })
