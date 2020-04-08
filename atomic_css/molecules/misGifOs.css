@@ -22,11 +22,10 @@
     .container_myGifOs .content_myGifOs_boxes .myGifOs_box {
       display: flex;
       position: relative;
-      margin-bottom: 16px; }
-      .container_myGifOs .content_myGifOs_boxes .myGifOs_box img {
-        height: 298px;
-        width: 288px;
-        background-color: #E6E6E6; }
+      margin-bottom: 16px;
+      height: 298px;
+      width: 288px;
+      background-color: #E6E6E6; }
   .container_myGifOs .content_myGifOs_boxes.night {
     background-color: #110038; }
 

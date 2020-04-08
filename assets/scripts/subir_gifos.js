@@ -171,30 +171,6 @@ document.querySelector(".start_button").addEventListener("click", () => {
 
                 document.location.reload();
 
-                // document.querySelector(".uploadGif").style.display = "none";
-
-                // document.querySelector(".createGif").style.display = "block";
-
-                // video_Container.style.display = "block";
-                // vistaPrevia.style.display = "none";
-                // repeatButton.style.display = "none";
-                // uploadButton.style.display = "none";
-                // captureButton.style.display = "block";
-                // cameraImg.style.display = "block";
-
-                // recorder.destroy();
-
-                // recorder = RecordRTC(recordGif, {
-                //     type: 'gif',
-                //     frameRate: 1,
-                //     quality: 10,
-                //     width: 360,
-                //     hidden: 240,
-                //     onGifRecordingStarted: function() {
-                //         console.log('recorder iniciado')
-                //     },
-                // });
-
             })
 
         })
