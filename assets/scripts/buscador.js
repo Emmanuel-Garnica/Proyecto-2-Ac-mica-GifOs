@@ -1,12 +1,11 @@
-document.querySelector("input").addEventListener("keyup", (variable) => {
+// document.querySelector("input").addEventListener("keyup", (variable) => {
 
-    if (variable.key === "Enter") {
-        document.querySelector(".subcontainer2_search").style.display = "none";
-        buscarGif()
-    }
+//     if (variable.key === "Enter") {
+//         document.querySelector(".subcontainer2_search").style.display = "none";
+//         buscarGif();
+//     }
 
-
-})
+// })
 
 function buscarGif() {
     let search = document.querySelector("input").value;
@@ -49,7 +48,7 @@ function desplegarSugerencias() {
 
     let input = document.getElementsByTagName("input")[0];
 
-    input.addEventListener("keyup", () => {
+    input.addEventListener("keyup", (variable) => {
 
         let suggestions = document.querySelector(".subcontainer2_search");
         let search_button = document.querySelector(".button_search");

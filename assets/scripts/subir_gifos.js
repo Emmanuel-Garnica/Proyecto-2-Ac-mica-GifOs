@@ -26,7 +26,9 @@ document.querySelector(".start_button").addEventListener("click", () => {
             let captureButton = document.querySelector(".capture_button");
             let cameraImg = document.getElementById("cameraImg");
             let finishCaptureButton = document.querySelector(".finish_capture_button");
+            let closeImg = document.querySelector(".close");
             let recordImg = document.getElementById("recordImg");
+            let recordGifTitle = document.querySelector(".recordGif_title");
             let repeatButton = document.querySelector(".repeat_button");
             let uploadButton = document.querySelector(".upload_button");
             let vistaPrevia = document.getElementById("preview");
@@ -58,6 +60,7 @@ document.querySelector(".start_button").addEventListener("click", () => {
                 cameraImg.style.display = "none";
                 finishCaptureButton.style.display = "block";
                 recordImg.style.display = "block";
+                recordGifTitle.innerHTML = "Capturando Tu Gifo";
 
             })
 
@@ -82,6 +85,8 @@ document.querySelector(".start_button").addEventListener("click", () => {
                 recordImg.style.display = "none";
                 repeatButton.style.display = "block";
                 uploadButton.style.display = "block";
+                closeImg.style.display = "none";
+                recordGifTitle.innerHTML = "Vista Previa";
 
                 // Oculta el video y muestra la vista previa
 
@@ -155,7 +160,7 @@ document.querySelector(".start_button").addEventListener("click", () => {
                 hiddenInput.setAttribute("value", myURL);
 
                 document.body.appendChild(hiddenInput);
-                o
+
                 hiddenInput.select();
 
                 document.execCommand("copy");
@@ -169,6 +174,8 @@ document.querySelector(".start_button").addEventListener("click", () => {
                 let enlaceExterno = document.createElement('a');
 
                 enlaceExterno.href = myURL;
+
+                enlaceExterno.target = "_blank";
 
                 enlaceExterno.download = myURL;
 
