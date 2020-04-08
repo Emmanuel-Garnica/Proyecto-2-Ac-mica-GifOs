@@ -43,24 +43,7 @@ function buscarGif() {
 
     document.querySelector(".subcontainer2_search").classList.replace("display_flex", "display_none");
 
-    // e.key === "Enter"
-    // PARA QUE RECONOZCA EL ENTER
 }
-
-// function searchEnter(e) {
-//     const keycode = e.keyCode;
-//     if (keycode === '13') {
-//         alert("Funciona");
-//     }
-// }
-
-// searchEnter();
-
-
-
-// let search_button = document.querySelector(".button_search");
-// let boton = document.querySelector(".button_search");
-
 
 function desplegarSugerencias() {
 
@@ -78,14 +61,6 @@ function desplegarSugerencias() {
 
             search_button.getElementsByTagName("img")[0].setAttribute("src", "./assets/images/lupa.svg");
 
-            // search_button.getElementsByTagName("img")[0].classList.add("img_bgcolor2");
-
-            // search_button.getElementsByTagName("span")[0].classList.add("img_bgcolor2");
-
-            // search_button.getElementsByTagName("span")[0].classList.add("txt_dark");
-
-            // search_button.classList.add("img_color2");
-
             search_button.getElementsByTagName("img")[0].style.backgroundColor = "#F7C9F3";
 
             search_button.getElementsByTagName("span")[0].style.backgroundColor = "#F7C9F3";
@@ -100,11 +75,15 @@ function desplegarSugerencias() {
 
             // once con booleano
             boton.addEventListener("mouseover", (event) => {
+
                 event.target.style.backgroundColor = "#E6BBE2";
+
             })
 
             boton.addEventListener("mouseout", (event) => {
+
                 event.target.style.backgroundColor = "#F7C9F3";
+
             })
 
         } else {

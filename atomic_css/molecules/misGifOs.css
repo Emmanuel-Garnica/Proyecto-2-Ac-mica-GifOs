@@ -17,12 +17,13 @@
   .container_myGifOs .content_myGifOs_boxes {
     display: flex;
     flex-flow: wrap row;
-    justify-content: space-between;
-    width: 1200px; }
+    justify-content: flex-start;
+    width: 1216px; }
     .container_myGifOs .content_myGifOs_boxes .myGifOs_box {
       display: flex;
       position: relative;
       margin-bottom: 16px;
+      margin-right: 16px;
       height: 298px;
       width: 288px;
       background-color: #E6E6E6; }

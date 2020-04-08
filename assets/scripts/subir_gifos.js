@@ -99,10 +99,6 @@ document.querySelector(".start_button").addEventListener("click", () => {
                 captureButton.style.display = "block";
                 cameraImg.style.display = "block";
 
-                // vistaPrevia.setAttribute("src", "");
-                // delete createdUrl;
-                // delete form;
-
                 recorder.destroy();
 
                 recorder = RecordRTC(recordGif, {
@@ -136,10 +132,7 @@ document.querySelector(".start_button").addEventListener("click", () => {
                 await fetch("https://upload.giphy.com/v1/gifs", requestOptions)
                     .then(response => response.json())
                     .then(id => myID = id.data.id)
-                    .then(console.log)
                     .catch(console.error);
-
-                // https://media.giphy.com/media/"id"/giphy.gif URL DE MANUEL
 
                 await fetch("https://api.giphy.com/v1/gifs/" + myID + "?api_key=nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh&")
                     .then(response => response.json())
@@ -157,13 +150,33 @@ document.querySelector(".start_button").addEventListener("click", () => {
 
             copyButton.addEventListener("click", function() {
 
+                var hiddenInput = document.createElement("input");
 
+                hiddenInput.setAttribute("value", myURL);
+
+                document.body.appendChild(hiddenInput);
+                o
+                hiddenInput.select();
+
+                document.execCommand("copy");
+
+                document.body.removeChild(hiddenInput);
 
             })
 
             downloadButton.addEventListener("click", function() {
 
+                let enlaceExterno = document.createElement('a');
 
+                enlaceExterno.href = myURL;
+
+                enlaceExterno.download = myURL;
+
+                document.body.appendChild(enlaceExterno);
+
+                enlaceExterno.click();
+
+                document.body.removeChild(enlaceExterno);
 
             })
 
