@@ -1,6 +1,6 @@
 function suggestionsGif() {
     const apiKey = "nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh";
-    let suggestions = fetch('http://api.giphy.com/v1/gifs/trending?limit=20&api_key=' + apiKey)
+    let suggestions = fetch('https://api.giphy.com/v1/gifs/trending?limit=20&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((images) => images.images.preview_webp.url))
@@ -12,7 +12,7 @@ function suggestionsGif() {
             })
         })
 
-    fetch('http://api.giphy.com/v1/gifs/trending?limit=20&api_key=' + apiKey)
+    fetch('https://api.giphy.com/v1/gifs/trending?limit=20&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((title) => title.title))
