@@ -10,7 +10,7 @@
 function buscarGif() {
     let search = document.querySelector("input").value;
     const apiKey = "nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh";
-    let found = fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
+    let found = fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
         .then((res) => res.json())
         .then((data) => data.data)
         .then((array) => array.map((images) => images.images.preview_webp.url))
@@ -24,7 +24,7 @@ function buscarGif() {
 
     document.querySelector(".title_trending").innerHTML = search + ":";
 
-    fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
+    fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((title) => title.title))
@@ -122,7 +122,7 @@ function sugerenciaUno() {
 
     let search = document.getElementById("sugerencia1").innerHTML;
 
-    fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
+    fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((images) => images.images.preview_webp.url))
@@ -136,7 +136,7 @@ function sugerenciaUno() {
 
     document.querySelector(".title_trending").innerHTML = search + ":";
 
-    fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
+    fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((title) => title.title))
@@ -161,7 +161,7 @@ function sugerenciaDos() {
 
     let search = document.getElementById("sugerencia2").innerHTML;
 
-    fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
+    fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((images) => images.images.preview_webp.url))
@@ -175,7 +175,7 @@ function sugerenciaDos() {
 
     document.querySelector(".title_trending").innerHTML = search + ":";
 
-    fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
+    fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((title) => title.title))
@@ -200,7 +200,7 @@ function sugerenciaTres() {
 
     let search = document.getElementById("sugerencia3").innerHTML;
 
-    fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
+    fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((images) => images.images.preview_webp.url))
@@ -214,7 +214,7 @@ function sugerenciaTres() {
 
     document.querySelector(".title_trending").innerHTML = search + ":";
 
-    fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
+    fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + search + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((title) => title.title))
