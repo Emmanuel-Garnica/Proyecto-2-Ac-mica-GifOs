@@ -6,7 +6,7 @@ document.getElementsByClassName("Unicorn")[0].style.backgroundImage = "url('http
 function verMasJonathan() {
     let title = "Jonathan Vanness";
     const apiKey = "nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh";
-    let suggestions = fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
+    let suggestions = fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((images) => images.images.preview_webp.url))
@@ -20,7 +20,7 @@ function verMasJonathan() {
 
     document.querySelector(".title_trending").innerHTML = title + ":";
 
-    fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
+    fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((title) => title.title))
@@ -39,7 +39,7 @@ function verMasJonathan() {
 function verMasSailor() {
     let title = "Sailor Mercury";
     const apiKey = "nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh";
-    let suggestions = fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
+    let suggestions = fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((images) => images.images.preview_webp.url))
@@ -53,7 +53,7 @@ function verMasSailor() {
 
     document.querySelector(".title_trending").innerHTML = title + ":";
 
-    fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
+    fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((title) => title.title))
@@ -72,7 +72,7 @@ function verMasSailor() {
 function verMasFabFive() {
     let title = "Fab Five";
     const apiKey = "nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh";
-    let suggestions = fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
+    let suggestions = fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((images) => images.images.preview_webp.url))
@@ -86,7 +86,7 @@ function verMasFabFive() {
 
     document.querySelector(".title_trending").innerHTML = title + ":";
 
-    fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
+    fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((title) => title.title))
@@ -105,7 +105,7 @@ function verMasFabFive() {
 function verMasUnicorns() {
     let title = document.querySelectorAll(".sb_title")[3].innerHTML.slice(1);
     const apiKey = "nlzm1uqvJd1LB9FZMds6OIhmeoZm6AIh";
-    let suggestions = fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
+    let suggestions = fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((images) => images.images.preview_webp.url))
@@ -119,7 +119,7 @@ function verMasUnicorns() {
 
     document.querySelector(".title_trending").innerHTML = title + ":";
 
-    fetch('http://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
+    fetch('https://api.giphy.com/v1/gifs/search?limit=20&q=' + title + '&api_key=' + apiKey)
         .then((response) => response.json())
         .then((data) => data.data)
         .then((array) => array.map((title) => title.title))
