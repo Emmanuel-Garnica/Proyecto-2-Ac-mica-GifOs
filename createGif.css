@@ -1,9 +1,5 @@
 @import url(atomic_css/utilities/fonts.css);
-body.night,
-.banner.night,
-.logo.night,
-.banner_butt.night,
-.mygifos.night {
+.night {
   background-color: #110038; }
 
 .visits {
@@ -120,6 +116,8 @@ body.night,
         background-color: #F0F0F0;
         border: 1px solid #808080;
         box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF; }
+        .banner_butt .containermenu .menu span:hover {
+          cursor: pointer; }
         .banner_butt .containermenu .menu span.SD.day {
           background-color: #FFF4FD; }
           .banner_butt .containermenu .menu span.SD.day::before {
@@ -404,6 +402,10 @@ button:hover {
     right: 46px;
     width: 144px;
     background-color: #F7C9F3; }
+
+body {
+  position: absolute;
+  height: 100%; }
 
 .container_myGifOs {
   display: flex;
