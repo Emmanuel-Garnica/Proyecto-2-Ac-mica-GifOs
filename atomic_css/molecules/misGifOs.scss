@@ -1,4 +1,9 @@
 @import '../utilities/variables.scss';
+body {
+    position: absolute;
+    height: 100%;
+}
+
 .container_myGifOs {
     display: flex;
     flex-direction: column;
